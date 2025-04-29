@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="1800">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <h2>contact us</h2>
+    <p>if you have any problem with our resturant</p>
+    <p class="address-image"></p>
+    <p class="address"> Lorem ipsum dolor sit</p>
+    <p class="email-image"></p>
+    <p class="our-email">helwanresturant@gmail.com</p>
+    <p class="phone-image"></p>
+    <p class="our-phone">01024544360</p>
+    <form method="post">
+        <p>send message</p>
+        <!-- Username -->
+        <input type="text"
+        placeholder=" " 
+        name="Username"
+        id="username"
+        minlength="2" 
+        maxlength="40" 
+        required>
+        <label for="username" class="username">username</label><br>
+        <br> <!--user Phone number-->
+        <input type="tel"
+        name="phone" 
+        id="phone-number"
+        placeholder=" "
+        required>
+        <label for="phone-number" class="phone">phone number</label><br>
+        <br><!--user email -->
+        <input type="email"
+        name="customer-email"
+        id="email"
+        placeholder=" "
+        required>
+        <label for="email" class="email">email</label><br>
+        <br><!--user message-->
+        <textarea 
+        name="message from user" 
+        id="message" 
+        placeholder=" "
+        minlength="3"
+        maxlength="348"
+        required></textarea>
+        <br>
+        <label for="user-message" class="message">message</label>
+        <!-- submit button -->
+        <button id="submit" value="submit">submit</button>
+    </form>
+
+</body>
+</html>

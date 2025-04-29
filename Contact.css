@@ -1,0 +1,191 @@
+body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #faa300;
+}
+h2 {
+    position: relative;
+    text-align: center;
+    font-size: 65px;
+    top: -40px;
+    margin-bottom: -25px;
+    text-transform: capitalize;
+}
+p:nth-child(2){
+    margin: 0 auto 10px;
+    text-align: center;
+    width: 710px;
+    position: relative;
+    font-size: 30px;
+}
+/* icons background-image and its size */
+.phone-image,
+.email-image,
+.address-image {
+    border:1px solid rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.our-phone,
+.our-email,
+.address {
+    position: absolute;
+    font-size: 55px;
+}
+.address-image {
+    position: absolute;
+    background-image: url(location.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 310px;
+    left: 60px;
+    background-color: rgba(0, 0, 0, 0.137);
+    transition-duration: 0.3s;
+    width: 90px;
+    height: 90px;
+}
+.address {
+    top: 290px;
+    left: 170px;
+}
+.email-image {
+    position: absolute;
+    background-image: url(email.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 447px;
+    left: 60px;
+    background-color: rgba(0, 0, 0, 0.137);
+    transition-duration: 0.3s;
+    width: 90px;
+    height: 90px;
+}
+.our-email {
+    top: 428px;
+    left: 170px;
+}
+.phone-image {
+    position: absolute;
+    background-image: url(phone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 590px;
+    left: 60px;
+    background-color: rgba(0, 0, 0, 0.137);
+    transition-duration: 0.3s;
+    width: 90px;
+    height: 90px;
+}
+.our-phone {
+    top: 570px;
+    left: 170px;
+} /* the container */
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 20px 45% 20px 55%;
+    width: 510px;
+    height: 658px;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 20px;
+    text-transform: capitalize;
+    box-shadow: 3px 3px 15px 1px;
+}
+/* specify the place of boxes */
+input,
+textarea {
+    position: relative;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    background-color: transparent;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-self: stretch;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    top: -30px;
+}
+textarea {
+    position: relative;
+    height: 100px;
+    line-height: 1.6;
+    top: -60px;
+}
+label {
+    margin-left: 40px;
+    position: relative;
+    top: -52px;
+    font-size: 16px;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+}
+.message {
+    top: -110px;
+}
+#submit {
+    position: relative;
+    border: 2px solid rgba(255, 200, 119, 0.49);
+    background-color: rgb(255, 200, 119);
+    color: inherit;
+    align-self: flex-start;
+    padding: 12px;
+    text-transform: capitalize;
+    font-size: 20px;
+    left: 38px;
+    top: -45px;
+}
+p:first-child {
+    position: relative;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    align-self: flex-start;
+    margin-left: 40px;
+    top: -30px;
+}
+#username:focus ~ .username,
+#username:valid ~ .username,
+#username:not(:placeholder-shown)
+#username:not(:focus) ~ .username {
+    top: -90px;
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+#phone-number:focus ~ .phone,
+#phone-number:valid ~ .phone,
+#phone-number:not(:placeholder-shown)
+#phone-number:not(:focus) ~ .phone {
+    top: -100px;
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+#email:focus ~ .email,
+#email:valid ~ .email,
+#email:not(:placeholder-shown)
+#email:not(focus) ~ .email {
+    top: -100px;
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+textarea:focus ~ .message,
+#message:valid ~ .message,
+#message:not(:placeholder-shown)
+#message:not(focus) ~ .message {
+    top: -185px;
+    margin-left: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
